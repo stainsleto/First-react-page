@@ -49,9 +49,7 @@ code {
 
 .content{
   font-family: 'Inter', sans-serif;
-  margin:20px;
-  width:580px;
-  height:300px;
+  margin:20px 0px 0px 20px;
   background-image:url(./images/reactjs-icon\ 2.png);
   background-repeat:no-repeat;
   background-position:right center;
