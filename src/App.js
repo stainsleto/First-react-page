@@ -1,13 +1,22 @@
 import React from "react";
-import ReactDOM from 'react-dom';
 import MainJs from "./components/main";
 import NavBar from "./components/navbar";
 
 function App(){
+
+    const[darkMode, setDarkMode] = React.useState(true)
+
+    function toggleDarkMode(){
+        setDarkMode(prevMode => !prevMode)
+    }
+
     return(
-        <div>
-            <NavBar />
-            <MainJs />
+        <div className="container">
+            <NavBar 
+                darkMode={darkMode} 
+                toggleDarkMode={toggleDarkMode} 
+            />
+            <MainJs darkMode={darkMode} />
         </div>
     )
 }
